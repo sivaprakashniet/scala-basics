@@ -1,0 +1,1 @@
+POST     /jar/execute                          controllers.JobController.sparkJobExecutor

@@ -1,0 +1,34 @@
+In the simple-spark-jobserver, you can execute your code in two ways:
+
+1) Create a job in the local server and compile it to create a JAR file. Send this jar file to the job server. Then, execute this JAR remotely.
+2) Create a job in the remote server and compile it to create a JAR file. Then, execute this JAR remotely.
+
+API requests to use to remotely execute a JAR:
+1) POST /jar/upload (Should upload the jar files in a jars folder)
+
+jar-file
+
+Response:
+{
+"status":"uploaded",
+"jar-path":"jars/simple.jar"
+}
+
+2) POST /jar/execute (Executes a remote job)
+
+Request:
+{
+"jar-path":"jars/simple.jar",
+"job-name":"SimpleJob",
+"master":"yarn",                                           // Leave blank for local execution
+"deploy-mode":"cluster",                                   // Leave blank for local execution
+"parameters":{}
+}
+
+Response:
+{
+"status":"completed",
+"result":{
+"number-of-lines":"20"
+}
+}   

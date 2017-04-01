@@ -1,0 +1,4 @@
+The Novikov self-consistency principle, also known as the Novikov self-consistency conjecture and Larry Niven's law of conservation of History, is a principle developed by Russian physicist Igor Dmitriyevich Novikov in the mid-1980s.
+Novikov intended it to solve the problem of paradoxes in time travel, which is theoretically permitted in certain solutions of general relativity that contain what are known as closed timelike curves.
+The principle asserts that if an event exists that would cause a paradox or any "change" to the past whatsoever, then the probability of that event is zero.
+It would thus be impossible to create time paradoxes.
